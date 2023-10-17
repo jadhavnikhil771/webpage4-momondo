@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOMONDO - Make Your Travelling Easy</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    </head>
+    <body>
+        <!-- Header Section Start -->
+    <header>
+        <ul>
+            <li><a href="index.html">
+                <img src="./assets/img/logo.jpeg" alt="logo" width="100px" height="24px">
+            </a></li>
+            <li><a href="javascript:void()" class="active">Flights</a></li>
+            <li><a href="javascript:void()">Hotel</a></li>
+            <li><a href="javascript:void()">Car Hire</a></li>
+            <li><a href="javascript:void()">Trip Finder</a></li>
+            <li><a href="javascript:void()">Inspirations</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="javascript:void()">
+                    <img src="./assets/img/flag.jpeg" alt="us-flg" width="23px" height="12px">
+                    English(GBP)
+                </a>
+            </li>
+            <li><a href="javascript:void()" style="color:#64c01e;">Log In</a></li>
+        </ul>
+    </header>
+    <!-- /Header Section End -->
+
+    <!-- Banner Section Start -->
+      
+        <section class="banner">
+
+            <h1>"The best place to find <br> the cheapest airfares"</h1>
+            <h2>- every single time</h2>
+            
+            <form action="">
+                <div>
+                    <div class="switchButton">
+                        <button type="button" class="active">
+                            <i class="fa-solid fa-plane-departure"></i>Flights
+                        </button>
+                        <button type="button">
+                            <i class="fa-solid fa-shop"></i>Hotels
+                        </button>
+                        <button type="button">
+                            <i class="fa-solid fa-car"></i>Cars
+                        </button>
+                    </div>
+
+                    <div class="searchForm">
+                        <label for="origin-city" >Origin City</label>
+                        <input type="text" name="origin-city" id="origin-city"  placeholder="Enter origin city">
+                        
+                        <span><i class="fa-solid fa-right-left" style="color: rgb(109, 172, 172) ; margin-right:5px;" ></i></span>
+
+                        <label for="destination-city">Destination City</label>
+                        <input type="text" name="destination-city" id="destination-city" placeholder="Entern Destination City">
+
+                        <label for="trave-start-date">Start Date</label>
+                        <input type="date" name="trave-start-date" id="trave-start-date" placeholder="Enter Start Date">
+
+                        <label for="trave-end-date">End Date</label>
+                        <input type="date" name="trave-end-date" id="trave-end-date" placeholder="Enter End Date">
+
+                        <label for="select-passenger">Select Passenger</label>
+                        <select name="select-passenger" id="select-passenger">
+                            <option value="1 pass">1 Passenger</option>
+                            <option value="2 pass">2 Passenger</option>
+                            <option value="3 pass">3 Passenger</option>
+                            <option value="4 pass">4 Passenger</option>
+                            <option value="5 pass">5 Passenger</option>
+                        </select>
+                    </div>
+
+                    <div class="trip">
+                            
+                        <label for="Trip type "><i class="fa-solid fa-ticket fa-rotate-90"></i> Trip type :</label>
+                        <select name="Trip type" id="Return Trip">
+                        <option value="Return ">Return Trip</option>
+                        <option value="Return">Return</option>
+                        <option value="Return">One-Wey</option>
+                        <option value="Return">Multi City</option>
+                        </select>
+
+                        
+                        <label for="Ticket class "><i class="fa-solid fa-ticket-simple fa-rotate-90" style="color: #f8f9fc;"></i>Ticket class:</label>
+                        <select name="Ticket class" id="Economy">
+                        <option value="class ">Economy</option>
+                        <option value="class">Premium </option>
+                        <option value="class">Business</option>
+                        <option value="class">First</option>
+                        </select>
+
+                        <div class="box">
+                            <input type="checkbox" name="select" value="Direct Flights only">Direct Flights only
+                            <input type="checkbox" name="select" value="Include nearby airports">Include nearby airports
+                        </div>
+                    </div>
+                </div>
+                    <div>
+                        <button type="submit" class="smt">Search</button>
+                    </div>
+            </form>
+        </section>
+        <!-- /Banner Section End -->
+
+        <!-- Fun Section Start -->
+            <section class="fun">
+                <h2>SOME FUN WE  COVERED </h2>
+                <ul>
+                    <li>
+                        <img src="./assets/img/man.png" alt="logo" width="50px" height="50px">
+                        <p>5670 M <br> CYLING TRACK</p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/distance.png" alt="logo" width="50px" height="50px">
+                        <P>480 M <br> DISTANCE COVERED</P>
+                    </li>
+                    <li>
+                        <img src="./assets/img/hi.jfif" alt="logo" height="50px" width="50x">
+                        <P>5670 M <br> ALTITUDE HIKED</P>
+                    </li>
+                    <li>
+                        <img src="./assets/img/bout.png" alt="logo" height="50px" width="50px">
+                        <P>180 KM <br> SAILING DISTANCE</P>
+                    </li>
+                    <li>
+                        <img src="./assets/img/mountain.png" alt="logo" height="50px" width="50px">
+                        <P>570 DAYS <br> SPENT ADVENTURES</P>
+                    </li>
+                    <li>
+                        <img src="./assets/img/j.png" alt="logo" height="50px" width="50px">
+                        <P>567 M <br> JUGLE DISTANCE</P>
+                    </li>
+                </ul>
+            </section>
+        <!-- /Fun Section End -->
+
+        <!--  Newslatter Section Start -->
+        <section class="newslatter">
+            <h2>SUSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
+            <p>Join our community of over 300,000 global readers who receive emails filled with news 
+                prootions, <br> and other good stuff from G Adventures.
+            </p>
+
+            <form action="">
+                <label for="newsemail">Email</label>
+                <input type="email" name="newsemail" id="newsemail" placeholder="Enter your email address....." style="width: 70%; height: 40px; background: none; ;">
+                <input type="button" value="SEARCH" style="width: 20%; height: 40px;">
+            </form>
+        </section>    
+        <!-- /Newslatter Section End -->
+
+        <!--  Destination Section Start -->
+        <section class="destination">
+            <h2>POPULAR DESTINATIONS</h2>
+            <ul>
+                <li>
+                    <img src="./assets/img/night v.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $999 </span>Rome,Florence & Venice<br>9-Night Vacation w/Air, Save <span>$550</span></h5>
+                     <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/aus v.jpg" alt="img" width="100%" height="50%">
+                    <h5><span> $1699 </span>Australia:Sydney & Fiji <br> Vacation w/Air, Save</h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/nig v.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $1699 </span>Greek islands 8-Night<br> Vacation w/Air, <span>Save $1060</span></h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/ch v.jfif" alt="img" width="100%" height="50%" >
+                    <h5><span> $899 </span>Ireland & Germany 6-Night <br> Adventures w/Air</h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/morocco.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $1299 </span>Morocco 4-Star Escorted  <br> Vacation w/Air, <span>Save $1600</span></h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/bri v.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $639 </span>Cabo All-Inclusive Beach<br> Getaway w/Air, <span>Save $250</span></h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/trip v.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $2299 </span>New zealand: Multi-City <br> Trip w/Tours & Car Rental</h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+                <li>
+                    <img src="./assets/img/tour v.jfif" alt="img" width="100%" height="50%">
+                    <h5><span> $1942 </span>& up Tukey 8-Nit. Trip w/Air <br> Gulded Tours & Hotels</h5>
+                    <p>This is the lowest price we've seen in four years for a nine-night</p> 
+                </li>
+            </ul>
+        </section>
+        <!-- /Destination Section End -->
+
+         <!-- Estimate Section Start -->
+         <section class="estimate">
+
+            <div>
+               <h1>GET A QUICK ESTIMATE</h1>
+               <h3>GET A PROFFESIONAL HELP</h3>
+               
+              
+                </div>
+            </div>
+         </section>
+          <!-- /Estimate Section End -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
