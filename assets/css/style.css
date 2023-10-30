@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
 }
 header ul li {
-    margin-left: 40px;
+    margin-left: 30px;
     display: inline-block;
 }
 header ul li a{
@@ -65,7 +65,7 @@ header ul li a.active{
     background: #371252;
 }
 .banner form button{
-    width: 90px;
+    width: 80px;
     height: 25px;
     border: none;
     color: #fff;
@@ -78,21 +78,21 @@ header ul li a.active{
 
 .banner form .searchForm{
     margin-top: 8px;
+    width: 115%;
 }
 .banner form .searchForm label{
     display:none;
 }
 .banner form .searchForm input,
 .banner form .searchForm select{
-    width: 175px;
+    width: 170px;
     height: 35px;
-    margin-right: 6px;
+    margin-right: 5px;
 }
 .banner form  .trip,
 .banner form .box{
     color: #fff;
     display: inline-flex;
-    display: inline-block;
     margin-top: 3px;
 }
 .banner form .trip select,
@@ -112,7 +112,8 @@ header ul li a.active{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin: 8px ;
+    margin-top: 6px;
+    margin-left: 50px;
     background: #dd1a37;
 }
 /* Banner Section End */
@@ -184,7 +185,7 @@ header ul li a.active{
     height: auto;
     color: #fff;
     text-align: center;
-    padding: 50px 155px;
+    padding: 50px 125px;
     background: #20162F;
 }
 .destination h2{
@@ -236,7 +237,7 @@ header ul li a.active{
 }
 .estimate  h1,
 .estimate  h4{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 .estimate form{
@@ -244,9 +245,9 @@ header ul li a.active{
 }
 .estimate form select,
 .estimate form input{
-    width: 170px;
+    width: 155px;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .estimate img{
     position: absolute;
@@ -306,9 +307,13 @@ footer{
                 url(../img/airbus-in-airport.jpg);
     background-size: 100% 100%;
 }
-footer .topfooder{
+footer .topfooder,
+footer .topfooder .topcountry{
     display: flex;
     justify-content: space-between;
+}
+footer .topfooder .topcountry .city{
+    margin-left: 120px;
 }
 footer  h3{
     color: #c4c2c7;
@@ -348,15 +353,16 @@ footer .search{
 footer .search ul li {
     display: inline-flex;
     justify-content: space-between;
-    margin-right: 20px;
+    margin-right: 11px;
+    margin-top: 10px;
 }
 footer .search ul li a{
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
 }
 footer .search p{
     color: #c4c2c7;
-    font-size: 17px;
+    font-size: 14px;
 }
 footer .visit ul li{
     display: inline-flex;
@@ -365,3 +371,239 @@ footer .visit ul li{
     font-size: 23px;
 }
 /* Footer Section End */
+
+/* Media Query Section Start */
+@media screen and (max-width:1268px){
+    header, .banner, .fun, .newslatter, 
+    .destination, .estimate, .blog, footer{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .banner form{
+        margin-left: 60px;
+        margin-right: 60px;
+        height: auto;
+    }
+    .banner form .searchForm input,
+    .banner form .searchForm select{
+        width:17% ;
+    }
+    .banner form button.smt{
+        margin-left: 120px;
+    }
+    .banner form .trip{
+        width: 130%;
+    }
+    .estimate form{
+        width: 90%;
+    }
+    .estimate form select,
+    .estimate form input{
+        width: 125px;
+        margin-right: -10px;
+    }
+}
+@media screen and (max-width:990px){
+    header ul li{
+        margin-left: 6px;
+    }
+    .banner h1{
+        top: 90px;
+        left: 100px;
+    }
+    .banner h2{
+        top: 200px;
+        left: 100px;
+    }
+    .banner form .trip,
+    .banner form .box{
+        display: block;
+    }
+    .banner form .box{
+        display: flex;
+        gap: 50px;
+    }
+    .banner  form .box input{
+        margin-right: -48px;
+    }
+    .banner form button.smt{
+        margin-top: 15px;
+    }
+    .fun ul li{
+        width: 110px;
+        height: 100px;
+    }
+    .destination {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .destination ul li h5,
+    .destination ul li p{
+        margin-top: 0px;
+    }
+    .estimate{
+        padding: 30px 10px;
+    }
+    .estimate h1{
+        font-size: 20px;
+        margin-top: 0px
+    }
+    .estimate h4{
+        font-size: 12px;
+    }
+    .estimate form{
+       width: 70%;
+       height: 100px;
+       margin-top: 10px;
+    }
+    .estimate form select,
+    .estimate form input{
+       width: 40%;
+    }
+    .estimate img{
+        width: 180px;
+        height: 230px;
+    }
+    .blog h2+p{
+        padding: 0px 50px;
+    }
+    .blog-content {
+        display: block;
+    }
+    footer .topfooder {
+        display: block;
+    }
+    footer .topfooder .international h3{
+        text-align: center;
+    }
+    footer .topfooder .international{
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+    footer .bottomfooter .logo{
+        margin-top: 10px;
+    }
+    footer .bottomfooter .search{
+        padding-left: 10px;
+        margin-right: 0px;
+    }
+    footer .visit ul li{
+        display: block;
+    }
+}
+@media screen and (max-width:749px){
+    .banner form{
+        width: 50%;
+        left: 100px;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner form button{
+        width: auto;
+    }
+    .banner form .searchForm input,
+    .banner form .searchForm select{
+        display: block;
+        width: 87%;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form .box{
+        display:block;
+    }
+    .banner form .box input{
+        margin-right: 10px;
+    }
+    .banner form .trip{
+        width: auto;
+    }
+    .banner form button.smt{
+        width: 100%;
+        height: 30px;
+        border-radius: 0px;
+        margin: 10px auto;
+    }
+    .fun{
+        height: auto;
+    }
+    .fun ul{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 120px 120px;
+        grid-gap: 10px;
+        margin-left: 8%;
+    }
+    .destination ul{
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: 250px 250px;
+        grid-gap: 30px;
+    }
+    footer .topfooder .topcountry .city {
+        margin-left: 0px; 
+    }
+}
+@media screen and (max-width:523px){
+    .banner h1,
+    .banner h2{
+        position: static;
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 15px;
+    }
+    .banner form {
+        left: 35px;
+    }
+    .fun h2{
+        font-size: 20px;
+    }
+    .fun ul {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 120px 120px;
+        grid-gap: 10px;
+        margin-left: 45px;
+        margin-right: 0px;
+    }
+    .newslatter h2{
+        font-size: 20px;
+    }
+    .newslatter p{
+        font-size: 12px;
+    }
+    .newslatter form{
+        margin-left: 5px;
+    }
+    .destination ul{
+        display: grid;
+        grid-template-columns: repeat(1, 70%);
+        grid-template-rows: 250px 250px 250px;
+        grid-gap: 20px;
+        padding-left: 25%;
+    }
+    .destination ul li h5,
+    .destination ul li p{
+        margin-top: 8px;
+    }
+    .blog h2+p, .blog h2 {
+        padding: 0px ;
+    }
+    .blog-content div {
+         display:block; 
+    }
+    .blog-content div {
+        padding: 5px 0px;
+    }
+    footer .topfooder, footer .topfooder .topcountry {
+        display: block;
+        padding-left: 4px;
+    }
+    footer .search ul li{
+        font-size: 14px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+/* Media Query Section End */
